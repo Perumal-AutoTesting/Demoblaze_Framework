@@ -20,6 +20,9 @@ public class cartPage {
 	@FindBy(xpath = "//tr[@class='success']//a[text()='Delete']")
 	WebElement deleteSamsungGalaxyProduct;
 
+	@FindBy(xpath = "//div[@class='panel panel-info']/following-sibling::button[1]")
+	WebElement placeSamsunGalaxyOrder;
+
 	public void verifySamsunProductInCart() {
 
 		Assert.assertTrue(verifySamsungGalaxyProduct.isDisplayed(), "Samsung Galaxy S6 is not present in the cart");
@@ -29,6 +32,11 @@ public class cartPage {
 
 		deleteSamsungGalaxyProduct.click();
 
+	}
+
+	public void SamsunPlaceOrder() {
+
+		placeSamsunGalaxyOrder.click();
 	}
 
 }
