@@ -8,6 +8,8 @@
 			<class name="demoblazeFramework.testcases.AddToCartDemoblaze" />
 			<class
 				name="demoblazeFramework.testcases.placeOrderForPurchase" />
+			<class
+				name="demoblazeFramework.testcases.placeOrderForPurchase" />
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->
